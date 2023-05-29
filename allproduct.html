@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artworks Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+    @font-face{
+        font-family: 'theseasons';
+        src: url(Fontspring-DEMO-theseasons-bd.otf)format('opentype');
+    }
+
+    @font-face{
+        font-family: 'overpass';
+        src: url(Overpass-Black.ttf)format('truetype');
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Jost', sans-serif;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .artTop {
+        background-color: rgb(236, 196, 121) ;
+    }
+
+    .ArtopTitle {
+        text-align: center;
+        font-family: 'theseasons';
+        font-size: 50px;
+        margin-bottom:40px;
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="artTop">
+        <div class="ArtopTitle">
+            <p>Niche Art Bazaar</p>
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD9PqwzWnLTTZykOM-wdBHsuboiqDuJeIg",
+          authDomain: "niche-art-bazaar.firebaseapp.com",
+          projectId: "niche-art-bazaar",
+          storageBucket: "niche-art-bazaar.appspot.com",
+          messagingSenderId: "292480179725",
+          appId: "1:292480179725:web:42a6dfbe03e8c5cf72bf44",
+          measurementId: "G-P70XMSX33V"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <section>
+        <div id="image-container"></div>
+    </section>
+  </body>
+</html>
